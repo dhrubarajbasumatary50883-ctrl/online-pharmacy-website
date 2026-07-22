@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f2f8f8;
+}
+
+.prescription-container{
+    width:500px;
+    background:white;
+    margin:40px auto;
+    padding:25px;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align:center;
+    color:#138b8b;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    color:gray;
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+textarea{
+    height:100px;
+    resize:none;
+}
+
+input[type="file"]{
+    padding:8px;
+}
+
+#fileName{
+    color:#138b8b;
+    margin-bottom:15px;
+    font-size:14px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#138b8b;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0f6d6d;
+}
+
+/* Message */
+
+.message-box{
+    position:fixed;
+    top:20px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#138b8b;
+    color:white;
+    padding:12px 25px;
+    border-radius:5px;
+    display:none;
+}
+
+.message-box.show{
+    display:block;
+}

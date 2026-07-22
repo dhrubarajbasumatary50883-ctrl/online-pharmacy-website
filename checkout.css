@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f2f8f8;
+    padding:40px;
+}
+
+.checkout-container{
+    max-width:1100px;
+    margin:auto;
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,.15);
+}
+
+.checkout-container h2{
+    text-align:center;
+    color:#138b8b;
+    margin-bottom:30px;
+}
+
+.checkout-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+}
+
+.customer-info,
+.order-summary{
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:20px;
+}
+
+.customer-info h3,
+.order-summary h3{
+    color:#138b8b;
+    margin-bottom:15px;
+}
+
+.customer-info input,
+.customer-info textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+.customer-info textarea{
+    height:90px;
+    resize:none;
+}
+
+.customer-info label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:15px;
+    cursor:pointer;
+}
+
+.customer-info input[type="radio"]{
+    width:auto;
+    margin:0;
+}
+
+.order-item{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:12px;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+
+#grandTotal{
+    margin-top:20px;
+    color:#138b8b;
+}
+
+.order-summary button{
+    width:100%;
+    margin-top:25px;
+    padding:14px;
+    background:#138b8b;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.order-summary button:hover{
+    background:#0f6d6d;
+}
+
+@media(max-width:768px){
+
+    .checkout-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+/* Toast Notification */
+.message-box{
+    position:fixed;
+    top:25px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#138b8b;
+    color:white;
+    padding:15px 30px;
+    border-radius:8px;
+    font-size:16px;
+    opacity:0;
+    visibility:hidden;
+    transition:0.3s;
+    z-index:1000;
+}
+
+.message-box.show{
+    opacity:1;
+    visibility:visible;
+}
