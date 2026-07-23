@@ -318,7 +318,7 @@ nav a:hover{
     align-items: center;
     gap: 120px;
     padding: 60px 40px;
-    background: #ffffff;
+    background: white;
 }
 
 .trust-box{
@@ -338,7 +338,7 @@ nav a:hover{
 }
 
 .trust-box p{
-    color: #555;
+    color:gray;
     font-size: 22px;
     line-height: 1.5;
 }
@@ -459,7 +459,7 @@ footer{
     right:20px;
 
     background:#28a745;
-    color:#fff;
+    color:white;
 
     padding:15px 25px;
 
@@ -494,9 +494,9 @@ footer{
     width: 360px;
     max-width: 90%;
 
-    background: #ffffff;
+    background: whitesmoke;
 
-    border: 1px solid #e5e5e5;
+    border: 1px solid whitesmoke;
 
     border-radius: 14px;
 
@@ -506,7 +506,7 @@ footer{
     align-items: center;
     gap: 15px;
 
-    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    box-shadow: 0 12px 30px black;
 
     opacity: 0;
     visibility: hidden;
@@ -777,57 +777,5 @@ footer{
 
     opacity:1;
     background:#FFD54F;
-
-}
-
-/* RESPONSIVE */
-
-@media(max-width:900px){
-
-.hero-slider{
-
-    height:auto;
-
-}
-
-.slide{
-
-    flex-direction:column;
-    text-align:center;
-    padding:25px;
-
-}
-
-.slide-text{
-
-    width:100%;
-
-}
-
-.slide-image{
-
-    width:100%;
-    margin-top:20px;
-    text-align:center;
-
-}
-
-.slide-image img{
-
-    width:280px;
-
-}
-
-.slide-text h1{
-
-    font-size:35px;
-
-}
-
-.slide-text h2{
-
-    font-size:22px;
-
-}
 
 }

@@ -6,7 +6,7 @@
 }
 
 body{
-    background:#f2f8f8;
+    background:white;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -20,7 +20,7 @@ body{
     padding:40px;
     text-align:center;
     border-radius:12px;
-    box-shadow:0 0 15px rgba(0,0,0,.15);
+    box-shadow:0 0 15px black;
 }
 
 .tick{
@@ -43,7 +43,7 @@ body{
 }
 
 .success-box p{
-    color:#555;
+    color:gray;
     margin-bottom:10px;
     line-height:1.5;
 }
