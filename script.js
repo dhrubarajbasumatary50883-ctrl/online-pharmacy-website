@@ -136,3 +136,94 @@ function showToast(medicineName){
     },2500);
 
 }
+        /* SLIDER bar */
+
+let slides = document.querySelectorAll(".slide");
+
+let dots = document.querySelectorAll(".dot");
+
+let currentSlide = 0;
+
+
+/* Show Slide */
+
+function showSlide(index){
+
+    slides.forEach(function(slide){
+
+        slide.classList.remove("slide-active");
+
+    });
+
+    dots.forEach(function(dot){
+
+        dot.classList.remove("active");
+
+    });
+
+    slides[index].classList.add("slide-active");
+
+    dots[index].classList.add("active");
+
+}
+
+
+/* Next Slide */
+
+function nextSlide(){
+
+    currentSlide++;
+
+    if(currentSlide >= slides.length){
+
+        currentSlide = 0;
+
+    }
+
+    showSlide(currentSlide);
+
+}
+
+
+/* Previous Slide */
+
+function prevSlide(){
+
+    currentSlide--;
+
+    if(currentSlide < 0){
+
+        currentSlide = slides.length - 1;
+
+    }
+
+    showSlide(currentSlide);
+
+}
+
+
+/* Arrow Buttons */
+
+document.querySelector(".next").addEventListener("click", nextSlide);
+
+document.querySelector(".prev").addEventListener("click", prevSlide);
+
+
+/* Auto Slide */
+
+setInterval(nextSlide,4000);
+
+
+/* Dot Navigation */
+
+dots.forEach(function(dot,index){
+
+    dot.addEventListener("click",function(){
+
+        currentSlide = index;
+
+        showSlide(currentSlide);
+
+    });
+
+});
